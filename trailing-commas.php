@@ -14,13 +14,17 @@ $array = [
               because you did make two actual changes. */
 ];
 
+// parameter lists
 function func ($foo, $bar, $baz, ) {
     echo $foo, ' ', $bar, ' ', $baz, PHP_EOL;
 }
 
+// function calls
 func ('foo', 'bar', 'baz', );
 
 $message = 'World';
+
+// closure `use` statement
 $func = function () use ($message, ) {
     echo 'Hello, ', $message, '!', PHP_EOL;
 };
